@@ -32,12 +32,17 @@ public class UniqWithoutCMD {
         Uniq iFlagFromUniq = new Uniq();
         Uniq uFlagFromUniq = new Uniq();
         Uniq cFlagFromUniq = new Uniq();
-        Uniq numFromUniq = new Uniq();
+        Uniq sFlagFromUniq = new Uniq();
+        Uniq num = new Uniq();
+        Integer n = num.returnNum();
         Boolean uFlagEq;
-        Boolean stay = true;
         int counter = 1;
+        if(sFlagFromUniq.sflag()){
+            for(int i = 0; i < lines.size() ; i++){
+                lines.set(i, lines.get(i).substring(n)) ;
+            }
+        }
         for (int i = 1; i < lines.size(); i++){
-            System.out.println(i);
             // -i flag beginning
             if (iFlagFromUniq.iflag()){
                 eq = lines.get(i).equalsIgnoreCase(lines.get(i - 1));
@@ -63,9 +68,13 @@ public class UniqWithoutCMD {
                 else {
                     counter = 1;
                 }
-                if (i == 1 && !eq){
-                    result.add(lines.get(i - 1));
+                if (cFlagFromUniq.cflag()){
+                    if (i == 1 && !eq){
+                        result.add(lines.get(i - 1));
+                    }
                 }
+
+
                 if (i != lines.size() - 1) {
                     uFlagEq = !lines.get(i).equals(lines.get(i - 1)) && !lines.get(i).equals(lines.get(i + 1));
                 }
@@ -117,9 +126,6 @@ public class UniqWithoutCMD {
                             result.add(lines.get(i));
                         }
                     }
-
-
-
                 }
                 else {
                     if (!eq){
@@ -129,6 +135,7 @@ public class UniqWithoutCMD {
                         result.add(lines.get(i));
                     }
                 }
+
 
             }
 

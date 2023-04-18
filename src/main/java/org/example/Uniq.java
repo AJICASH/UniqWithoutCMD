@@ -11,7 +11,7 @@ import org.kohsuke.args4j.Option;
 
 public class Uniq{
     @Option(name = "-i", usage = "Flag -i says that register doesn't matter")
-    private boolean TheRegisterMakesSense = true;
+    private boolean TheRegisterMakesSense = false;
     public boolean iflag(){
         return TheRegisterMakesSense;
     }
@@ -22,13 +22,17 @@ public class Uniq{
     }
     @Option(name = "-c", usage = "Flag -c says that before strings that are duplicated should be written " +
             "number of repeating strings")
-    private boolean Prefix = true;
+    private boolean Prefix = false;
     public boolean cflag(){
         return Prefix;
     }
     @Option(name = "-s", usage = "the -s flag means that when detecting lines, the first N" +
             " should be ignored characters of each line.")
-    private Integer num;
+    private boolean sflag = false;
+    public boolean sflag(){
+        return sflag;
+    }
+    private Integer num = 3;
     public Integer returnNum(){
         return num;
     }
