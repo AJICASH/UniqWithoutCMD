@@ -46,9 +46,9 @@ public class Uniq{
     }
 
     public static void main(String[] args) throws IOException, CmdLineException {
-        new Uniq().parse(args);
+        new Uniq().doMain(args);
     }
-    private void parse(String[] args) throws IOException, CmdLineException {
+    private void doMain(String[] args) throws IOException, CmdLineException {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -57,6 +57,7 @@ public class Uniq{
             System.err.println(e.getMessage());
             throw e;
         }
+
     }
 
 }

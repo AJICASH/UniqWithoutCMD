@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="сделаны -i -u -c флаги, но без cmd пока что">
+    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="сделаны -i -u -c -s флаги, но без cmd пока что">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/intest1" beforeDir="false" afterPath="$PROJECT_DIR$/input/intest1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/outtest1" beforeDir="false" afterPath="$PROJECT_DIR$/output/outtest1" afterDir="false" />
@@ -51,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.UniqWithoutCMDTest.taskSort8">
-    <configuration name="UniqWithoutCMDTest.taskSort4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}</component>
+  <component name="RunManager" selected="Gradle.UniqWithoutCMDTest.taskSort5">
+    <configuration name="UniqWithoutCMDTest.taskSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -75,7 +75,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort4&quot;" />
+            <option value="&quot;UniqWithoutCMDTest.taskSort&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,15 +159,14 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="-i -c -o" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort8&quot;" />
+            <option value="outtest1" />
+            <option value="intest1" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,13 +176,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort" />
+      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort5" />
+      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort6" />
+      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort7" />
+      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort8" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort8" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort7" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort6" />
         <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort5" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort4" />
+        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort7" />
+        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort" />
+        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort8" />
+        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort6" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681835514608</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="сделаны -i -u -c -s флаги, но без cmd пока что">
+      <created>1681838952900</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681838952900</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +240,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="помргите" />
     <MESSAGE value="сделаны -i -u -c флаги, но без cmd пока что" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделаны -i -u -c флаги, но без cmd пока что" />
+    <MESSAGE value="сделаны -i -u -c -s флаги, но без cmd пока что" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделаны -i -u -c -s флаги, но без cmd пока что" />
   </component>
 </project>

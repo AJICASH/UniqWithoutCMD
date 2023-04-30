@@ -11,19 +11,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class UniqWithoutCMDTest {
     UniqWithoutCMD file;
 
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-    // К КАЖДОМУ ТЕСТУ НАДО МЕНЯТЬ ФЛАГ ВРУЧНУЮ В Uniq.java ПОТОМУ ЧТО Я ПОКА НЕ ПОНЯЛ КАК СДЕЛАТЬ ТАК ЧТОБ КОМАНДНАЯ СТРОКА ЗАРАБОТАЛА
-
     @Test
     void taskSort() throws IOException {
         //при -i
         file = new UniqWithoutCMD("input/intest1","output/outtest1");
-        assertEquals(Arrays.asList("HeLLo!", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "Goodbye!", "aaAAAAaad", "ALLAH"), file.taskSort(file));
+        assertEquals(Arrays.asList("HeLLo!", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "Goodbye!", "aaAAAAaad", "ALLA"), file.taskSort(file));
     }
     @Test
     void taskSort111() throws IOException {
@@ -41,19 +33,19 @@ public class UniqWithoutCMDTest {
     void taskSort3() throws IOException {
         //при -c
         file = new UniqWithoutCMD("input/intest1","output/outtest1");
-        assertEquals(Arrays.asList("Hello!", "HeLLo!", "abcder", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2 Goodbye!", "aaAAAAaad", "2 ALLAH"), file.taskSort(file));
+        assertEquals(Arrays.asList("Hello!", "HeLLo!", "abcder", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2 Goodbye!", "aaAAAAaad", "2 ALLA"), file.taskSort(file));
     }
     @Test
     void taskSort4() throws IOException {
         //при -i -c
         file = new UniqWithoutCMD("input/intest1","output/outtest1");
-        assertEquals(Arrays.asList("2 HeLLo!", "2 ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2 Goodbye!", "aaAAAAaad", "2 ALLAH"), file.taskSort(file));
+        assertEquals(Arrays.asList("2 HeLLo!", "2 ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2 Goodbye!", "aaAAAAaad", "2 ALLA"), file.taskSort(file));
     }
     @Test
     void taskSort5() throws IOException {
         //при -s
         file = new UniqWithoutCMD("input/intest1","output/outtest1");
-        assertEquals(Arrays.asList("lo!", "Lo!", "der", "DER", "de", "gd", "ga", "ea", "aa", "dbye!", "AAAaad", "AH"), file.taskSort(file));
+        assertEquals(Arrays.asList("lo!", "Lo!", "der", "DER", "de", "gd", "ga", "ea", "aa", "dbye!", "AAAaad", "A"), file.taskSort(file));
     }
     @Test
     void taskSort6() throws IOException {
@@ -71,6 +63,6 @@ public class UniqWithoutCMDTest {
     void taskSort8() throws IOException {
         //при -s -i -c
         file = new UniqWithoutCMD("input/intest1","output/outtest1");
-        assertEquals(Arrays.asList("2 Lo!", "2 DER", "de", "gd", "ga", "ea", "aa","2 dbye!", "AAAaad", "2 AH"), file.taskSort(file));
+        assertEquals(Arrays.asList("2 Lo!", "2 DER", "de", "gd", "ga", "ea", "aa","2 dbye!", "AAAaad", "2 A"), file.taskSort(file));
     }
 }
