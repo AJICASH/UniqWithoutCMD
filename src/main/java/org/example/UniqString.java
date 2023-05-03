@@ -1,5 +1,9 @@
 package org.example;
 
+import org.kohsuke.args4j.CmdLineException;
+import org.kohsuke.args4j.CmdLineParser;
+import org.kohsuke.args4j.Option;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -8,36 +12,96 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UniqWithoutCMD {
-    private String InputFile;
-    private String OutputFile;
+public class UniqString {
+//    @Option(name = "-i", usage = "Flag -i says that register doesn't matter")
+    private boolean iFlag;
+    //TODO: классы оберты боксинг анбоксин
+//    @Option(name = "-u", usage = "Flag -u says that only unique strings should be written")
 
-    public UniqWithoutCMD(String InputFile, String OutputFile) {
-        this.InputFile = InputFile;
-        this.OutputFile = OutputFile;
+    private boolean uFlag;
+//    @Option(name = "-s", usage = "the -s flag means that when detecting lines, the first N" +
+//            " should be ignored characters of each line.")
+
+    private boolean sFlag;
+//    private int sNum;
+//    @Option(name = "-c", usage = "Flag -c says tshat before strings that are duplicated should be written " +
+//            "number of repeating strings")
+    private boolean cFlag;
+
+//    @Option(name = "-g", usage = "name of output file")//TODO: fix
+    private String inputFile;
+//    @Option(name = "-o", usage = "name of output file")
+    private String outputFile;
+
+    public UniqString(boolean iFlag, boolean uFlag, boolean sFlag, boolean cFlag, String inputFile, String outputFile) {
+        this.iFlag = iFlag;
+        this.uFlag = uFlag;
+        this.sFlag = sFlag;
+        this.cFlag = cFlag;
+        this.inputFile = inputFile;
+        this.outputFile = outputFile;
     }
 
-    public List<String> infileread() throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(InputFile));
-        return lines;
+    public boolean isiFlag() {
+        return iFlag;
     }
 
-    public List<String> outfileread() throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(OutputFile));
-        return lines;
+    public void setiFlag(boolean iFlag) {
+        this.iFlag = iFlag;
+    }
+
+    public boolean isuFlag() {
+        return uFlag;
+    }
+
+    public void setuFlag(boolean uFlag) {
+        this.uFlag = uFlag;
+    }
+
+    public boolean issFlag() {
+        return sFlag;
+    }
+
+    public void setsFlag(boolean sFlag) {
+        this.sFlag = sFlag;
+    }
+
+    public boolean iscFlag() {
+        return cFlag;
+    }
+
+    public void setcFlag(boolean cFlag) {
+        this.cFlag = cFlag;
+    }
+
+    public String getInputFile() {
+        return inputFile;
+    }
+
+    public void setInputFile(String inputFile) {
+        this.inputFile = inputFile;
+    }
+
+    public String getOutputFile() {
+        return outputFile;
+    }
+
+    public void setOutputFile(String outputFile) {
+        this.outputFile = outputFile;
     }
 
 
-    public List<String> taskSort(UniqWithoutCMD file) throws IOException {
-        Path outfile = Paths.get(OutputFile);
-        List<String> lines = Files.readAllLines(Paths.get(InputFile));
+    public void transform() throws IOException {
+        Path outfile = Paths.get(outputFile);
+        List<String> lines = Files.readAllLines(Paths.get(inputFile));
         List<String> result = new ArrayList<String>();
-        Boolean eq;
-        Uniq flagFromUniq = new Uniq();
-
-        Uniq num = new Uniq();
-        Integer n = num.returnNum();
-        Boolean uFlagEq;
+        boolean eq;
+//        Uniqttt flagFromUniq = new Uniqttt();
+//
+//        Uniqttt num = new Uniqttt();
+//        Integer n = num.returnNum();
+        int n = 3;
+        boolean uFlagEq;
         int counter = 1;
         if (flagFromUniq.sflag()) {
             for (int i = 0; i < lines.size(); i++) {
@@ -135,6 +199,7 @@ public class UniqWithoutCMD {
 
         }
         Files.write(outfile, result, StandardCharsets.UTF_8);
-        return outfileread();
+//        return outfileread();
+
     }
 }

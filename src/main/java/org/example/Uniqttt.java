@@ -9,7 +9,7 @@ import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
-public class Uniq{
+public class Uniqttt {
     @Option(name = "-i", usage = "Flag -i says that register doesn't matter")
     private boolean TheRegisterMakesSense = false;
     public boolean iflag(){
@@ -20,7 +20,7 @@ public class Uniq{
     public boolean uflag(){
         return OnlyUniqueStr;
     }
-    @Option(name = "-c", usage = "Flag -c says that before strings that are duplicated should be written " +
+    @Option(name = "-c", usage = "Flag -c says tshat before strings that are duplicated should be written " +
             "number of repeating strings")
     private boolean Prefix = false;
     public boolean cflag(){
@@ -46,7 +46,7 @@ public class Uniq{
     }
 
     public static void main(String[] args) throws IOException, CmdLineException {
-        new Uniq().doMain(args);
+        new Uniqttt().doMain(args);
     }
     private void doMain(String[] args) throws IOException, CmdLineException {
         CmdLineParser parser = new CmdLineParser(this);
