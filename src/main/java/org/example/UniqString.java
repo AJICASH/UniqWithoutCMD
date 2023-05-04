@@ -1,9 +1,5 @@
 package org.example;
 
-import org.kohsuke.args4j.CmdLineException;
-import org.kohsuke.args4j.CmdLineParser;
-import org.kohsuke.args4j.Option;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -83,7 +79,9 @@ public class UniqString {
 
     public List<String> lines;
     List<String> result;
-    public void transform() throws IOException {
+
+
+    public List<String> transform() throws IOException {
         lines = Files.readAllLines(Paths.get(inputFile));
         result = new ArrayList<String>();
         doTransform();
@@ -93,6 +91,7 @@ public class UniqString {
         }else {
             System.out.println(result);
         }
+        return result;
     }
 
     private void doTransform() {

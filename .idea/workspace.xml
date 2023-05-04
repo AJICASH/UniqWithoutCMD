@@ -9,17 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="option works">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/UniqWithoutCMD_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UniqTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
+    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/outtest1" beforeDir="false" afterPath="$PROJECT_DIR$/output/outtest1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UniqWithoutCMDtttt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Uniqttt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UniqWithoutCMDTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UniqTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UniqTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +44,52 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="review" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/input/intest1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/output/outtest1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/UniqString.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/UniqTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -65,18 +100,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/LavaLens/IdeaProjects/UniqWithoutCMD/out/artifacts/UniqWithoutCMD_jar",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LavaLens/IdeaProjects/UniqWithoutCMD/out/artifacts/UniqWithoutCMD_jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\artifacts\UniqWithoutCMD_jar" />
@@ -91,17 +126,11 @@
       <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\artifacts\UniqWithoutCMD_jar" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UniqTest.test1">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.UniqTest.test5">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="UniqWithoutCMD.main" />
-      <option name="PROGRAM_PARAMETERS" value=" -c -o C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1 C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PROGRAM_PARAMETERS" value="-i -s 3 -u -o C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1 C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,43 +181,90 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UniqWithoutCMD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UniqTest.test3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list />
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;UniqTest.test3&quot;" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UniqWithoutCMD.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/UniqWithoutCMD_jar/UniqWithoutCMD.jar" />
+    <configuration name="UniqTest.test4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;UniqTest.test4&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UniqTest.test5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;UniqTest.test5&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.UniqTest.test3" />
+      <item itemvalue="Gradle.UniqTest.test4" />
+      <item itemvalue="Gradle.UniqTest.test5" />
       <item itemvalue="Gradle.UniqTest.test1" />
       <item itemvalue="Gradle.UniqTest.test2" />
-      <item itemvalue="Gradle.UniqWithoutCMD" />
-      <item itemvalue="JAR Application.UniqWithoutCMD.jar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UniqTest.test1" />
+        <item itemvalue="Gradle.UniqTest.test5" />
+        <item itemvalue="Gradle.UniqTest.test4" />
+        <item itemvalue="Gradle.UniqTest.test3" />
         <item itemvalue="Gradle.UniqTest.test2" />
-        <item itemvalue="Gradle.UniqWithoutCMD" />
-        <item itemvalue="JAR Application.UniqWithoutCMD.jar" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.UniqTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683215943428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ready">
+      <created>1683228335363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683228335363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +346,7 @@
     <MESSAGE value="сделаны -i -u -c -s флаги, но без cmd пока что" />
     <MESSAGE value="почищен код" />
     <MESSAGE value="option works" />
-    <option name="LAST_COMMIT_MESSAGE" value="option works" />
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
   </component>
 </project>

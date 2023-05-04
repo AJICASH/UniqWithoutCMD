@@ -32,7 +32,7 @@ public class Main {
 //        new Main().parseArguments(strArgs);
 //        test1(new ArrayList<>(Arrays.asList("ab","aa","aa","aa","ab")));
     }
-    public void parseArguments(String[] args) throws IOException, CmdLineException {
+    public UniqString parseArguments(String[] args) throws IOException, CmdLineException {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -43,6 +43,7 @@ public class Main {
         }
         UniqString uStr = new UniqString(iFlag, uFlag, sNum, cFlag, inputFile, outputFile);
         uStr.transform();
+        return uStr;
     }
 }
 
