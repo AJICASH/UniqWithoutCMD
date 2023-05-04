@@ -10,13 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="option works">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/UniqWithoutCMD_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UniqTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/outtest1" beforeDir="false" afterPath="$PROJECT_DIR$/output/outtest1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UniqWithoutCMDtttt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Uniqttt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UniqWithoutCMDTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/LavaLens/IdeaProjects/UniqWithoutCMD/out/production/resources/META-INF",
+    "last_opened_file_path": "C:/Users/LavaLens/IdeaProjects/UniqWithoutCMD/out/artifacts/UniqWithoutCMD_jar",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -76,6 +79,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\artifacts\UniqWithoutCMD_jar" />
+      <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\src\test\resources" />
       <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\production\resources\META-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -86,7 +91,7 @@
       <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\artifacts\UniqWithoutCMD_jar" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.UniqTest.test1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="UniqWithoutCMD.main" />
@@ -101,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqWithoutCMDTest.taskSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UniqTest.test1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -114,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort&quot;" />
+            <option value="&quot;UniqTest.test1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +129,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UniqWithoutCMDTest.taskSort5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UniqTest.test2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort5&quot;" />
+            <option value="&quot;UniqTest.test2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,66 +152,43 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UniqWithoutCMDTest.taskSort6" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UniqWithoutCMD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort6&quot;" />
-          </list>
+          <list />
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UniqWithoutCMDTest.taskSort7" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;UniqWithoutCMDTest.taskSort7&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="UniqWithoutCMD.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/UniqWithoutCMD_jar/UniqWithoutCMD.jar" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort" />
-      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort5" />
-      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort6" />
-      <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort7" />
+      <item itemvalue="Gradle.UniqTest.test1" />
+      <item itemvalue="Gradle.UniqTest.test2" />
+      <item itemvalue="Gradle.UniqWithoutCMD" />
+      <item itemvalue="JAR Application.UniqWithoutCMD.jar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UniqTest.test1" />
+        <item itemvalue="Gradle.UniqTest.test2" />
+        <item itemvalue="Gradle.UniqWithoutCMD" />
+        <item itemvalue="JAR Application.UniqWithoutCMD.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort6" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort5" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort7" />
-        <item itemvalue="Gradle.UniqWithoutCMDTest.taskSort" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683115634438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="option works">
+      <created>1683215943428</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683215943428</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,16 +264,5 @@
     <MESSAGE value="почищен код" />
     <MESSAGE value="option works" />
     <option name="LAST_COMMIT_MESSAGE" value="option works" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/UniqString.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

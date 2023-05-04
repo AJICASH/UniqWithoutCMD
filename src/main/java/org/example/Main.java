@@ -6,10 +6,6 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.StringTokenizer;
 
 public class Main {
     @Option(name = "-i", usage = "Flag -i says that register doesn't matter")
@@ -36,7 +32,7 @@ public class Main {
 //        new Main().parseArguments(strArgs);
 //        test1(new ArrayList<>(Arrays.asList("ab","aa","aa","aa","ab")));
     }
-    private  void parseArguments(String[] args) throws IOException, CmdLineException {
+    public void parseArguments(String[] args) throws IOException, CmdLineException {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -45,7 +41,6 @@ public class Main {
             System.err.println(e.getMessage());
             throw e;
         }
-
         UniqString uStr = new UniqString(iFlag, uFlag, sNum, cFlag, inputFile, outputFile);
         uStr.transform();
     }

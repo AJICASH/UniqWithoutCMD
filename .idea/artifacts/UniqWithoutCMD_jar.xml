@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="UniqWithoutCMD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UniqWithoutCMD_jar</output-path>
+    <root id="archive" name="UniqWithoutCMD.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
