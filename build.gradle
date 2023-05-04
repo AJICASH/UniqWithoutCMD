@@ -16,6 +16,14 @@ dependencies {
     implementation group: 'args4j', name: 'args4j', version: '2.33'
 }
 
+
+jar {
+    manifest {
+        attributes (
+                'Main-Class': 'com.mypackage.MyClass'
+        )
+    }
+}
 test {
     useJUnitPlatform()
 }
