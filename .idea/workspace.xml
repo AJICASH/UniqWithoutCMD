@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/outtest1" beforeDir="false" afterPath="$PROJECT_DIR$/output/outtest1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UniqString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UniqTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UniqTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e1141c4-e262-4cf5-a0c1-33a33552602f" name="Changes" comment="FINALLY IT'S WORKING" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +120,7 @@
       <recent name="C:\Users\LavaLens\IdeaProjects\UniqWithoutCMD\out\artifacts\UniqWithoutCMD_jar" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UniqTest.test5">
+  <component name="RunManager" selected="Gradle.UniqTest.test3">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="UniqWithoutCMD.main" />
@@ -260,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UniqTest.test5" />
-        <item itemvalue="Gradle.UniqTest.test4" />
         <item itemvalue="Gradle.UniqTest.test3" />
-        <item itemvalue="Gradle.UniqTest.test2" />
+        <item itemvalue="Gradle.UniqTest.test4" />
+        <item itemvalue="Gradle.UniqTest.test5" />
         <item itemvalue="Gradle.UniqTest.test1" />
+        <item itemvalue="Gradle.UniqTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683228335363</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FINALLY IT'S WORKING">
+      <created>1683237034346</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683237034346</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,6 +348,7 @@
     <MESSAGE value="почищен код" />
     <MESSAGE value="option works" />
     <MESSAGE value="ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready" />
+    <MESSAGE value="FINALLY IT'S WORKING" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINALLY IT'S WORKING" />
   </component>
 </project>
