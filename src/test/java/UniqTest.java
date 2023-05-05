@@ -18,10 +18,10 @@ public class UniqTest {
 
     @Test
     void test1() throws Exception {
-        String[] strArgs = {"-i", "-o","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1"};
+        String[] strArgs = {"-i", "-o","output\\outtest1","input\\intest1"};
         Main main = new Main();
         UniqString us = main.parseArguments(strArgs);
-        UniqString usExpected = new UniqString(true, false, 0,false,"C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1");
+        UniqString usExpected = new UniqString(true, false, 0,false,"input\\intest1","output\\outtest1");
         List<String> expectedOutput = new ArrayList<>(Arrays.asList("HeLLo!", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "Goodbye!", "aaAAAAaad", "ALLA"));
         System.out.println(us.transform());
         System.out.println(usExpected.transform());
@@ -33,10 +33,10 @@ public class UniqTest {
         assertTrue(first == second && first == true);    }
     @Test
     void test2() throws Exception {
-        String[] strArgs = {"-i","-s", "3","-c", "-o","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1"};
+        String[] strArgs = {"-i","-s", "3","-c", "-o","output\\outtest1","input\\intest1"};
         Main main = new Main();
         UniqString us = main.parseArguments(strArgs);
-        UniqString usExpected = new UniqString(true, false, 3,true,"C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1");
+        UniqString usExpected = new UniqString(true, false, 3,true,"input\\intest1","output\\outtest1");
         List<String> expectedOutput = new ArrayList<>(Arrays.asList("2HeLLo!", "2ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2Goodbye!", "aaAAAAaad", "2ALLA"));
         System.out.println(us.transform());
         System.out.println(usExpected.transform());
@@ -49,10 +49,10 @@ public class UniqTest {
     }
     @Test
     void test3() throws Exception {
-        String[] strArgs = {"-i","-s", "3","-u", "-o","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1"};
+        String[] strArgs = {"-i","-s", "3","-u", "-o","output\\outtest1","input\\intest1"};
         Main main = new Main();
         UniqString us = main.parseArguments(strArgs);
-        UniqString usExpected = new UniqString(true, true, 3,false,"C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1");
+        UniqString usExpected = new UniqString(true, true, 3,false,"input\\intest1","output\\outtest1");
         List<String> expectedOutput = new ArrayList<>(Arrays.asList("HeLLo!", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "Goodbye!", "aaAAAAaad", "ALLA"));
         System.out.println(us.transform());
         System.out.println(usExpected.transform());
@@ -65,10 +65,10 @@ public class UniqTest {
     }
     @Test
     void test4() throws Exception {
-        String[] strArgs = {"-i","-s", "3","-c","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1"};
+        String[] strArgs = {"-i","-s", "3","-c","input\\intest1"};
         Main main = new Main();
         UniqString us = main.parseArguments(strArgs);
-        UniqString usExpected = new UniqString(true, false, 3,true,"C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1");
+        UniqString usExpected = new UniqString(true, false, 3,true,"input\\intest1",null);
         List<String> expectedOutput = new ArrayList<>(Arrays.asList("2HeLLo!", "2ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "2Goodbye!", "aaAAAAaad", "2ALLA"));
         System.out.println("us trans " + us.transform());
         System.out.println("usEx trans " + usExpected.transform());
@@ -81,10 +81,10 @@ public class UniqTest {
     }
     @Test
     void test5() throws Exception {
-        String[] strArgs = { "-o","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1"};
+        String[] strArgs = { "-o","output\\outtest1","input\\intest1"};
         Main main = new Main();
         UniqString us = main.parseArguments(strArgs);
-        UniqString usExpected = new UniqString(false, false, 0,false,"C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\input\\intest1","C:\\Users\\LavaLens\\IdeaProjects\\UniqWithoutCMD\\output\\outtest1");
+        UniqString usExpected = new UniqString(false, false, 0,false,"input\\intest1","output\\outtest1");
         List<String> expectedOutput = new ArrayList<>(Arrays.asList("Hello!","HeLLo!","abcder", "ABCDER", "abcde", "arfgd", "arfga", "aeaea", "aaaaa", "Goodbye!", "aaAAAAaad", "ALLA"));
         System.out.println(us.transform());
         System.out.println(usExpected.transform());
